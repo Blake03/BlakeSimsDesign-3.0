@@ -2,6 +2,19 @@
 $breakpoint-tablet: 600px;
 $breakpoint-desktop: 992px;
 
+//Backgrounds
+$background-welcome: url("../img/mobile-bsd-bg.jpg");
+$background-welcome-desktop: url("../img/bsd-bg.jpg");
+$background-responsive: #333352;
+$background-development: #26561e;
+$background-code: #b74b0f;
+$background-work: #290606;
+$background-about: url("../img/skyfield.jpg");
+$background-about-desktop: url("../img/skyfield-desktop.jpg");
+
+//Padding
+$wrapper-padding-mobile: 12vw 15px;
+$wrapper-padding-desktop: 6vw 15px;
 
 //Partials
 @import "normalize";

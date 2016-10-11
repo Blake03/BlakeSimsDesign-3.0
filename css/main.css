@@ -436,10 +436,10 @@ a {
  * Kroc Camen, and the H5BP dev community and team.
  */
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles
    ========================================================================== */
 html {
-  color: #222;
+  color: #fff;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -508,6 +508,141 @@ textarea {
    ============================================================================================================== */
 .desktop-only {
   display: none;
+}
+
+/*=======Welcome-Section(Mobile)=======*/
+.welcome {
+  height: 100vh;
+  background-image: url("../img/mobile-bsd-bg.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.welcome__wrapper {
+  padding-top: 15vh;
+}
+
+.welcome__heading {
+  font-size: 9.8vw;
+  line-height: 1;
+}
+
+.welcome__sub-heading {
+  font-size: 7.1vw;
+}
+
+.welcome__ghost-button {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px 2px;
+  width: 35vw;
+  font-size: 4vw;
+}
+
+.welcome__social-icons a {
+  font-size: 8vw;
+  margin: 0px 3px;
+}
+
+/*=======What-I-Do(Mobile)=======*/
+/*----Responsive----*/
+.responsive {
+  background-color: #333352;
+  text-align: center;
+}
+
+.responsive__heading {
+  font-size: 8vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .responsive__heading {
+    font-size: 7vw;
+  }
+}
+
+.responsive__wrapper {
+  margin: 0px auto;
+  padding: 12vw 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .responsive__wrapper {
+    max-width: 66vw;
+    font-size: 2.3vw;
+  }
+}
+
+.responsive__image-box {
+  max-width: 75vh;
+}
+
+.responsive__image-box img {
+  width: 100%;
+}
+
+/*----Development----*/
+.development {
+  background-color: #26561e;
+  text-align: center;
+}
+
+.development__heading {
+  font-size: 8vw;
+}
+
+.development__wrapper {
+  margin: 0px auto;
+  padding: 12vw 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .development__wrapper {
+    max-width: 66vw;
+    font-size: 2.3vw;
+  }
+}
+
+.development__image-box {
+  max-width: 75vh;
+}
+
+.development__image-box img {
+  width: 100%;
+}
+
+/*----Code----*/
+.code {
+  background-color: #b74b0f;
+  text-align: center;
+}
+
+.code__heading {
+  font-size: 8vw;
+}
+
+.code__wrapper {
+  margin: 0px auto;
+  padding: 12vw 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .code__wrapper {
+    max-width: 66vw;
+    font-size: 2.3vw;
+  }
+}
+
+.code__image-box {
+  max-width: 75vh;
+}
+
+.code__image-box img {
+  width: 100%;
 }
 
 /* ===========================================================================

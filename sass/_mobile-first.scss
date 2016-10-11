@@ -7,11 +7,11 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Base styles
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #fff;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -89,3 +89,113 @@ textarea {
  .desktop-only{
     display: none;
 } 
+
+/*=======Welcome-Section(Mobile)=======*/
+.welcome{
+    height: 100vh;
+    background-image: $background-welcome;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+        &__wrapper{
+            padding-top: 15vh;
+          }
+                &__heading{
+                    font-size: 9.8vw;
+                    line-height: 1;
+                }
+                &__sub-heading{
+                    font-size: 7.1vw;
+                }   
+                &__ghost-button{
+                    display: inline-block;
+                    border: 2px solid #fff;
+                    border-radius: 5px;
+                    padding: 2px;
+                    margin: 5px 2px;
+                    width: 35vw;
+                    font-size: 4vw;
+                }    
+                &__social-icons a{
+                    font-size: 8vw;
+                    margin: 0px 3px;
+                }       
+        
+}
+
+
+
+ /*=======What-I-Do(Mobile)=======*/
+
+ /*----Responsive----*/
+.responsive{
+    background-color: $background-responsive;
+    text-align: center;
+        &__heading{
+          font-size: 8vw;
+          @media only screen and (min-width: $breakpoint-tablet) {
+            font-size: 7vw;
+    }
+        }
+        &__wrapper{
+            margin: 0px auto;
+            padding: $wrapper-padding-mobile;
+            @media only screen and (min-width: $breakpoint-tablet) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+            }
+        }
+        &__image-box{
+            max-width: 75vh;
+            img{
+                width: 100%;
+            }
+        }               
+}
+
+/*----Development----*/
+.development{
+    background-color: $background-development;
+    text-align: center;
+        &__heading{
+          font-size: 8vw;
+        }
+        &__wrapper{
+            margin: 0px auto;
+            padding: $wrapper-padding-mobile;
+            @media only screen and (min-width: $breakpoint-tablet) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+            }
+        }
+        &__image-box{
+            max-width: 75vh;
+            img{
+                width: 100%;
+            }
+        }                       
+}
+
+/*----Code----*/
+.code{
+    background-color: $background-code;
+    text-align: center;
+        &__heading{
+          font-size: 8vw;
+        }
+        &__wrapper{
+            margin: 0px auto;
+            padding: $wrapper-padding-mobile;
+            @media only screen and (min-width: $breakpoint-tablet) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+            }
+        }
+        &__image-box{
+            max-width: 75vh;
+            img{
+                width: 100%;
+            }
+        }                       
+}
