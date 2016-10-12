@@ -92,22 +92,38 @@ textarea {
 
 /*=======Welcome-Section(Mobile)=======*/
 .welcome{
-    height: 100vh;
     background-image: $background-welcome;
+    height: 100vh;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+        @media only screen and (min-width: $breakpoint-desktop) {
+          /*desktop*/
+            background-image: $background-welcome-desktop;
+        }
+
         &__wrapper{
             padding-top: 15vh;
-          }
+        }
+
                 &__heading{
-                    font-size: 9.8vw;
+                    font-size: 9.7vw;
                     line-height: 1;
+                      @media only screen and (min-width: $breakpoint-desktop) {
+                        /*desktop*/
+                          font-size: 6.8vw;
+                      }
                 }
+
                 &__sub-heading{
-                    font-size: 7.1vw;
-                }   
+                    font-size: 9vw;
+                      @media only screen and (min-width: $breakpoint-desktop) {
+                        /*desktop*/
+                          font-size: 4.6vw;
+                      }
+                }
+
                 &__ghost-button{
                     display: inline-block;
                     border: 2px solid #fff;
@@ -116,36 +132,67 @@ textarea {
                     margin: 5px 2px;
                     width: 35vw;
                     font-size: 4vw;
-                }    
+                      @media only screen and (min-width: $breakpoint-desktop) {
+                        /*desktop*/
+                          border: .3vw solid #fff;
+                          border-radius: .5vw;
+                          padding: 4px 10px;
+                          margin: 5px 2px;
+                          font-size: 1.6vw;
+                          font-weight: bold;
+                          width: unset;
+                          transition: all 0.2s ease-out;
+                          &:hover{
+                              background-color: rgba(176, 144, 144, 0.4);
+                              box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                              transition: all 0.1s ease-in;
+                          }
+                      }
+                }
+
                 &__social-icons a{
                     font-size: 8vw;
                     margin: 0px 3px;
-                }       
-        
+                      @media only screen and (min-width: $breakpoint-desktop) {
+                        /*desktop*/
+                          font-size: 4vw;
+                          margin: 0px 1vw;
+                          transition: all 0.2s ease-out;
+                          &:hover{
+                              text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                              transition: all 0.1s ease-in;
+                          }
+                      }  
+                }          
 }
 
 
 
- /*=======What-I-Do(Mobile)=======*/
+ /*=======What_I_Do-Section(Mobile)=======*/
 
  /*----Responsive----*/
 .responsive{
     background-color: $background-responsive;
     text-align: center;
+
         &__heading{
-          font-size: 8vw;
-          @media only screen and (min-width: $breakpoint-tablet) {
-            font-size: 7vw;
-    }
+            font-size: 8vw;
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  font-size: 7vw;
+              }
         }
+
         &__wrapper{
-            margin: 0px auto;
             padding: $wrapper-padding-mobile;
-            @media only screen and (min-width: $breakpoint-tablet) {
-                    max-width: 66vw;
-                    font-size: 2.3vw;
-            }
+            margin: 0px auto;
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  max-width: 66vw;
+                  font-size: 2.3vw;
+              }
         }
+
         &__image-box{
             max-width: 75vh;
             img{
@@ -158,17 +205,21 @@ textarea {
 .development{
     background-color: $background-development;
     text-align: center;
+
         &__heading{
           font-size: 8vw;
         }
+
         &__wrapper{
             margin: 0px auto;
             padding: $wrapper-padding-mobile;
-            @media only screen and (min-width: $breakpoint-tablet) {
-                    max-width: 66vw;
-                    font-size: 2.3vw;
-            }
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  max-width: 66vw;
+                  font-size: 2.3vw;
+              }
         }
+
         &__image-box{
             max-width: 75vh;
             img{
@@ -181,17 +232,21 @@ textarea {
 .code{
     background-color: $background-code;
     text-align: center;
+
         &__heading{
           font-size: 8vw;
         }
+
         &__wrapper{
             margin: 0px auto;
             padding: $wrapper-padding-mobile;
-            @media only screen and (min-width: $breakpoint-tablet) {
-                    max-width: 66vw;
-                    font-size: 2.3vw;
-            }
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  max-width: 66vw;
+                  font-size: 2.3vw;
+              }
         }
+
         &__image-box{
             max-width: 75vh;
             img{

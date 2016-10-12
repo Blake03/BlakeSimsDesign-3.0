@@ -512,12 +512,19 @@ textarea {
 
 /*=======Welcome-Section(Mobile)=======*/
 .welcome {
-  height: 100vh;
   background-image: url("../img/mobile-bsd-bg.jpg");
+  height: 100vh;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .welcome {
+    /*desktop*/
+    background-image: url("../img/bsd-bg.jpg");
+  }
 }
 
 .welcome__wrapper {
@@ -525,12 +532,26 @@ textarea {
 }
 
 .welcome__heading {
-  font-size: 9.8vw;
+  font-size: 9.7vw;
   line-height: 1;
 }
 
+@media only screen and (min-width: 992px) {
+  .welcome__heading {
+    /*desktop*/
+    font-size: 6.8vw;
+  }
+}
+
 .welcome__sub-heading {
-  font-size: 7.1vw;
+  font-size: 9vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .welcome__sub-heading {
+    /*desktop*/
+    font-size: 4.6vw;
+  }
 }
 
 .welcome__ghost-button {
@@ -543,12 +564,44 @@ textarea {
   font-size: 4vw;
 }
 
+@media only screen and (min-width: 992px) {
+  .welcome__ghost-button {
+    /*desktop*/
+    border: .3vw solid #fff;
+    border-radius: .5vw;
+    padding: 4px 10px;
+    margin: 5px 2px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    width: unset;
+    transition: all 0.2s ease-out;
+  }
+  .welcome__ghost-button:hover {
+    background-color: rgba(176, 144, 144, 0.4);
+    box-shadow: 0 0px 15px rgba(200, 200, 255, 0.4);
+    transition: all 0.1s ease-in;
+  }
+}
+
 .welcome__social-icons a {
   font-size: 8vw;
   margin: 0px 3px;
 }
 
-/*=======What-I-Do(Mobile)=======*/
+@media only screen and (min-width: 992px) {
+  .welcome__social-icons a {
+    /*desktop*/
+    font-size: 4vw;
+    margin: 0px 1vw;
+    transition: all 0.2s ease-out;
+  }
+  .welcome__social-icons a:hover {
+    text-shadow: 0 0px 15px rgba(200, 200, 255, 0.4);
+    transition: all 0.1s ease-in;
+  }
+}
+
+/*=======What_I_Do-Section(Mobile)=======*/
 /*----Responsive----*/
 .responsive {
   background-color: #333352;
@@ -561,17 +614,19 @@ textarea {
 
 @media only screen and (min-width: 600px) {
   .responsive__heading {
+    /*Tablet*/
     font-size: 7vw;
   }
 }
 
 .responsive__wrapper {
-  margin: 0px auto;
   padding: 12vw 15px;
+  margin: 0px auto;
 }
 
 @media only screen and (min-width: 600px) {
   .responsive__wrapper {
+    /*Tablet*/
     max-width: 66vw;
     font-size: 2.3vw;
   }
@@ -602,6 +657,7 @@ textarea {
 
 @media only screen and (min-width: 600px) {
   .development__wrapper {
+    /*Tablet*/
     max-width: 66vw;
     font-size: 2.3vw;
   }
@@ -632,6 +688,7 @@ textarea {
 
 @media only screen and (min-width: 600px) {
   .code__wrapper {
+    /*Tablet*/
     max-width: 66vw;
     font-size: 2.3vw;
   }
