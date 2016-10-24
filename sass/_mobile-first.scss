@@ -92,7 +92,7 @@ textarea {
 
 /*=======Welcome-Section(Mobile)=======*/
 .welcome{
-    background-image: $background-welcome;
+    background-image: $background-welcome-mobile;
     height: 100vh;
     background-position: right;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ textarea {
                     font-size: 9vw;
                       @media only screen and (min-width: $breakpoint-desktop) {
                         /*desktop*/
-                          font-size: 4.6vw;
+                          font-size: 6vw;
                       }
                 }
 
@@ -170,16 +170,28 @@ textarea {
 
  /*=======What_I_Do-Section(Mobile)=======*/
 
+ .what-i-do{
+      @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    display: flex;
+              }
+ }
+
  /*----Responsive----*/
 .responsive{
-    background-color: $background-responsive;
+    background: $background-responsive;
     text-align: center;
+    flex: 1 1 0;
 
         &__heading{
-            font-size: 8vw;
+            font-size: 7vw;
               @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
-                  font-size: 7vw;
+                  font-size: 5vw;
+              }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 3vw;
               }
         }
 
@@ -191,9 +203,15 @@ textarea {
                   max-width: 66vw;
                   font-size: 2.3vw;
               }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  padding: $wrapper-padding-desktop;
+                  font-size: 1.3em;
+              }
         }
 
         &__image-box{
+            margin: 0 auto;
             max-width: 75vh;
             img{
                 width: 100%;
@@ -205,9 +223,19 @@ textarea {
 .development{
     background-color: $background-development;
     text-align: center;
+    flex: 1 1 0;
 
         &__heading{
-          font-size: 8vw;
+            font-size: 7vw;
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  font-size: 5vw;
+              }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 3vw;
+              }
+
         }
 
         &__wrapper{
@@ -218,12 +246,19 @@ textarea {
                   max-width: 66vw;
                   font-size: 2.3vw;
               }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  padding: $wrapper-padding-desktop;
+                  font-size: 1.3em;
+              }
         }
 
         &__image-box{
+            margin: 0 auto;
             max-width: 75vh;
+            padding-bottom: 20px;
             img{
-                width: 100%;
+                width: 76%;
             }
         }                       
 }
@@ -232,9 +267,19 @@ textarea {
 .code{
     background-color: $background-code;
     text-align: center;
+    flex: 1 1 0;
+
 
         &__heading{
-          font-size: 8vw;
+          font-size: 7vw;
+            @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  font-size: 5vw;
+            }
+            @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 3vw;
+            }
         }
 
         &__wrapper{
@@ -243,11 +288,16 @@ textarea {
               @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
                   max-width: 66vw;
-                  font-size: 2.3vw;
+              }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  padding: $wrapper-padding-desktop;
+                  font-size: 1.3em;
               }
         }
 
         &__image-box{
+            margin: 0 auto;
             max-width: 75vh;
             img{
                 width: 100%;

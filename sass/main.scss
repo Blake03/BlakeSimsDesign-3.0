@@ -1,15 +1,15 @@
 //Media Queries
 $breakpoint-tablet: 600px;
-$breakpoint-desktop: 992px;
+$breakpoint-desktop: 900px;
 
 //Backgrounds
-$background-welcome: url("../img/mobile-bsd-bg.jpg");
+$background-welcome-mobile: url("../img/mobile-bsd-bg.jpg");
 $background-welcome-desktop: url("../img/bsd-bg.jpg");
 $background-responsive: #333352;
-$background-development: #26561e;
-$background-code: #b74b0f;
+$background-development: #686d64;
+$background-code: #9a4313;
 $background-work: #290606;
-$background-about: url("../img/skyfield.jpg");
+$background-about-mobile: url("../img/skyfield.jpg");
 $background-about-desktop: url("../img/skyfield-desktop.jpg");
 
 //Padding

@@ -520,7 +520,7 @@ textarea {
   text-align: center;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .welcome {
     /*desktop*/
     background-image: url("../img/bsd-bg.jpg");
@@ -536,7 +536,7 @@ textarea {
   line-height: 1;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .welcome__heading {
     /*desktop*/
     font-size: 6.8vw;
@@ -547,10 +547,10 @@ textarea {
   font-size: 9vw;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .welcome__sub-heading {
     /*desktop*/
-    font-size: 4.6vw;
+    font-size: 6vw;
   }
 }
 
@@ -564,7 +564,7 @@ textarea {
   font-size: 4vw;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .welcome__ghost-button {
     /*desktop*/
     border: .3vw solid #fff;
@@ -588,7 +588,7 @@ textarea {
   margin: 0px 3px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .welcome__social-icons a {
     /*desktop*/
     font-size: 4vw;
@@ -602,20 +602,35 @@ textarea {
 }
 
 /*=======What_I_Do-Section(Mobile)=======*/
+@media only screen and (min-width: 900px) {
+  .what-i-do {
+    /*desktop*/
+    display: flex;
+  }
+}
+
 /*----Responsive----*/
 .responsive {
-  background-color: #333352;
+  background: #333352;
   text-align: center;
+  flex: 1 1 0;
 }
 
 .responsive__heading {
-  font-size: 8vw;
+  font-size: 7vw;
 }
 
 @media only screen and (min-width: 600px) {
   .responsive__heading {
     /*Tablet*/
-    font-size: 7vw;
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .responsive__heading {
+    /*desktop*/
+    font-size: 3vw;
   }
 }
 
@@ -632,7 +647,16 @@ textarea {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .responsive__wrapper {
+    /*desktop*/
+    padding: 6vw 15px;
+    font-size: 1.3em;
+  }
+}
+
 .responsive__image-box {
+  margin: 0 auto;
   max-width: 75vh;
 }
 
@@ -642,12 +666,27 @@ textarea {
 
 /*----Development----*/
 .development {
-  background-color: #26561e;
+  background-color: #686d64;
   text-align: center;
+  flex: 1 1 0;
 }
 
 .development__heading {
-  font-size: 8vw;
+  font-size: 7vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .development__heading {
+    /*Tablet*/
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .development__heading {
+    /*desktop*/
+    font-size: 3vw;
+  }
 }
 
 .development__wrapper {
@@ -663,22 +702,47 @@ textarea {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .development__wrapper {
+    /*desktop*/
+    padding: 6vw 15px;
+    font-size: 1.3em;
+  }
+}
+
 .development__image-box {
+  margin: 0 auto;
   max-width: 75vh;
+  padding-bottom: 20px;
 }
 
 .development__image-box img {
-  width: 100%;
+  width: 76%;
 }
 
 /*----Code----*/
 .code {
-  background-color: #b74b0f;
+  background-color: #9a4313;
   text-align: center;
+  flex: 1 1 0;
 }
 
 .code__heading {
-  font-size: 8vw;
+  font-size: 7vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .code__heading {
+    /*Tablet*/
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .code__heading {
+    /*desktop*/
+    font-size: 3vw;
+  }
 }
 
 .code__wrapper {
@@ -690,11 +754,19 @@ textarea {
   .code__wrapper {
     /*Tablet*/
     max-width: 66vw;
-    font-size: 2.3vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .code__wrapper {
+    /*desktop*/
+    padding: 6vw 15px;
+    font-size: 1.3em;
   }
 }
 
 .code__image-box {
+  margin: 0 auto;
   max-width: 75vh;
 }
 
@@ -705,7 +777,7 @@ textarea {
 /* ===========================================================================
    Desktop and Tablet(landscape) Styles
    ============================================================================ */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .desktop-only {
     display: initial;
   }
