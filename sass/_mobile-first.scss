@@ -14,6 +14,7 @@ html {
     color: #fff;
     font-size: 1em;
     line-height: 1.4;
+    background: #6f6f6f
 }
 
 ::-moz-selection {
@@ -86,9 +87,10 @@ textarea {
 /* ==============================================================================================================
    Mobile-First styles
    ============================================================================================================== */
- .desktop-only{
+.desktop-only{
     display: none;
 } 
+
 
 /*=======Welcome-Section(Mobile)=======*/
 .welcome{
@@ -303,4 +305,54 @@ textarea {
                 width: 100%;
             }
         }                       
+}
+
+
+
+/*=======Work-Section=======*/
+
+
+.work{
+    text-align: center;
+    background: #290606;
+      &__heading{
+            padding: 20px;
+            text-align: center;
+            font-size: 7vw;
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  font-size: 5vw;
+              }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 3vw;
+              }
+      }
+      &__image-box{
+        font-size: .8em;
+        padding: 5px;
+        border-radius: 5px;
+        background: #292929;
+        text-align: center;
+        margin: 0 auto;
+        width: 43vh;
+          @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    max-width: 25vw;
+                    display: inline-block;
+                    margin: 2vw;
+              } 
+        img{
+          width: 100%;
+        }
+      }
+  
+}
+
+
+        
+@media only screen and (min-width: $breakpoint-desktop) {
+  .mobile-only{
+    display: none;
+  }
 }

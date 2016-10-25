@@ -442,6 +442,7 @@ html {
   color: #fff;
   font-size: 1em;
   line-height: 1.4;
+  background: #6f6f6f;
 }
 
 ::-moz-selection {
@@ -772,6 +773,61 @@ textarea {
 
 .code__image-box img {
   width: 100%;
+}
+
+/*=======Work-Section=======*/
+.work {
+  text-align: center;
+  background: #290606;
+}
+
+.work__heading {
+  padding: 20px;
+  text-align: center;
+  font-size: 7vw;
+}
+
+@media only screen and (min-width: 600px) {
+  .work__heading {
+    /*Tablet*/
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .work__heading {
+    /*desktop*/
+    font-size: 3vw;
+  }
+}
+
+.work__image-box {
+  font-size: .8em;
+  padding: 5px;
+  border-radius: 5px;
+  background: #292929;
+  text-align: center;
+  margin: 0 auto;
+  width: 43vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .work__image-box {
+    /*desktop*/
+    max-width: 25vw;
+    display: inline-block;
+    margin: 2vw;
+  }
+}
+
+.work__image-box img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .mobile-only {
+    display: none;
+  }
 }
 
 /* ===========================================================================
