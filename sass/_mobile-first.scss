@@ -91,6 +91,14 @@ textarea {
     display: none;
 } 
 
+strong {
+    font-weight: bold;
+    color: #dcc66d;
+}
+
+hr{
+    margin: 1.5em;
+}
 
 /*=======Welcome-Section(Mobile)=======*/
 .welcome{
@@ -109,67 +117,67 @@ textarea {
             padding-top: 15vh;
         }
 
-                &__heading{
-                    font-size: 9.7vw;
-                    line-height: 1;
-                      @media only screen and (min-width: $breakpoint-desktop) {
-                        /*desktop*/
-                          font-size: 6.8vw;
-                      }
+        &__heading{
+            font-size: 9.7vw;
+            line-height: 1;
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 6.8vw;
                 }
+        }
 
-                &__sub-heading{
-                    font-size: 9vw;
-                      @media only screen and (min-width: $breakpoint-desktop) {
-                        /*desktop*/
-                          font-size: 6vw;
-                      }
+        &__sub-heading{
+            font-size: 9vw;
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 6vw;
                 }
+        }
 
-                &__ghost-button{
-                    display: inline-block;
-                    border: 2px solid #fff;
-                    border-radius: 5px;
-                    padding: 2px;
-                    margin: 5px 2px;
-                    width: 35vw;
-                    font-size: 4vw;
-                      @media only screen and (min-width: $breakpoint-tablet) {
-                        /*tablet*/
-                          border: 3px solid #fff;
-                      }
-                      @media only screen and (min-width: $breakpoint-desktop) {
-                        /*desktop*/
-                          border: .3vw solid #fff;
-                          border-radius: .5vw;
-                          padding: 4px 10px;
-                          margin: 5px 2px;
-                          font-size: 1.6vw;
-                          font-weight: bold;
-                          width: unset;
-                          transition: all 0.2s ease-out;
-                          &:hover{
-                              background-color: rgba(176, 144, 144, 0.4);
-                              box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
-                              transition: all 0.1s ease-in;
-                          }
-                      }
-                }
+        &__ghost-button{
+            display: inline-block;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            padding: 2px;
+            margin: 5px 2px;
+            width: 35vw;
+            font-size: 4vw;
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*tablet*/
+                  border: 3px solid #fff;
+              }
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  border: .3vw solid #fff;
+                  border-radius: .5vw;
+                  padding: 4px 10px;
+                  margin: 5px 2px;
+                  font-size: 1.6vw;
+                  font-weight: bold;
+                  width: unset;
+                  transition: all 0.2s ease-out;
+                  &:hover{
+                      background-color: rgba(176, 144, 144, 0.4);
+                      box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                      transition: all 0.1s ease-in;
+                  }
+              }
+        }
 
-                &__social-icons a{
-                    font-size: 8vw;
-                    margin: 0px 3px;
-                      @media only screen and (min-width: $breakpoint-desktop) {
-                        /*desktop*/
-                          font-size: 4vw;
-                          margin: 0px 1vw;
-                          transition: all 0.2s ease-out;
-                          &:hover{
-                              text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
-                              transition: all 0.1s ease-in;
-                          }
-                      }  
-                }          
+        &__social-icons a{
+            font-size: 8vw;
+            margin: 0px 3px;
+              @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                  font-size: 4vw;
+                  margin: 0px 1vw;
+                  transition: all 0.2s ease-out;
+                  &:hover{
+                      text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                      transition: all 0.1s ease-in;
+                  }
+              }  
+        }          
 }
 
 
@@ -177,10 +185,10 @@ textarea {
  /*=======What_I_Do-Section(Mobile)=======*/
 
  .what-i-do{
-      @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                    display: flex;
-              }
+    @media only screen and (min-width: $breakpoint-desktop) {
+    /*desktop*/
+    display: flex;
+    }
  }
 
  /*----Responsive----*/
@@ -213,6 +221,9 @@ textarea {
                 /*desktop*/
                   padding: 6vw 40px;
                   font-size: 1.1em;
+                  p{
+                    text-align: justify;
+                  }
               }
         }
 
@@ -256,6 +267,9 @@ textarea {
                 /*desktop*/
                   padding: 6vw 40px;
                   font-size: 1.1em;
+                  p{
+                    text-align: justify;
+                  }
               }
         }
 
@@ -299,6 +313,9 @@ textarea {
                 /*desktop*/
                   padding: 6vw 40px;
                   font-size: 1.1em;
+                  p{
+                    text-align: justify;
+                  }
               }
         }
 
@@ -319,7 +336,8 @@ textarea {
 .work{
     text-align: center;
     background: #290606;
-      &__heading{
+    padding-bottom: 40px;
+        &__heading{
             padding: 35px 0px 20px;
             text-align: center;
             font-size: 7vw;
@@ -332,7 +350,7 @@ textarea {
                   font-size: 3vw;
               }
       }
-      &__image-box{
+    &__image-box{
         font-size: .8em;
         padding: 5px;
         border-radius: 5px;
@@ -341,22 +359,26 @@ textarea {
         margin: 0 auto;
         width: 43vh;
           @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                    max-width: 25vw;
-                    display: inline-block;
-                    margin: 3vw;
-              } 
+              /*desktop*/
+                max-width: 25vw;
+                display: inline-block;
+                margin: 3vw;
+              }
+        p{
+            padding: 5px 0px 2px;
+        }       
         img{
-          width: 100%;
+            width: 100%;
         }
-      }
-      &__flex-container{
+    }
+
+    &__flex-container{
         display: flex;
-      }
-      &__large-image-box{
+    }
+
+    &__large-image-box{
         width: 60vw;
         padding: 20px;
-      
         img{
             max-height: 82vh;
             padding: 0px 2vmin;
@@ -379,10 +401,11 @@ textarea {
               padding: 0px 2.8vw;
             }
         }
-      }
-      &__large-text-box{
+    }
+    &__large-text-box{
         width: 40vw;
         padding: 45px 30px 0px 0px;
+        text-align: justify;
         h4{
           text-align: center;
           padding-bottom: 5px;
@@ -395,6 +418,47 @@ textarea {
   
 }
 
+
+ /*=======About-Section(Mobile)=======*/
+.about{
+    background-image: url("../img/skyfield.jpg");
+    background-size: cover;
+    background-position: bottom left;
+        
+        &__wrapper{
+            padding: $wrapper-padding-mobile;
+        } 
+
+        &__text-box-left{
+            text-align: justify;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        &__heading{
+            text-align: center;
+            padding-bottom: 20px;
+            color: #dcc66d;
+            font-size: 7vw;
+              @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                  font-size: 5vw;
+              }
+        }
+
+        &__button{
+            background: #0f6f16;
+            display: inline-block;
+            padding: 6px 30px;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            position: relative;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+}
 
         
 @media only screen and (min-width: $breakpoint-desktop) {
