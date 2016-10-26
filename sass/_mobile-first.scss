@@ -134,6 +134,10 @@ textarea {
                     margin: 5px 2px;
                     width: 35vw;
                     font-size: 4vw;
+                      @media only screen and (min-width: $breakpoint-tablet) {
+                        /*tablet*/
+                          border: 3px solid #fff;
+                      }
                       @media only screen and (min-width: $breakpoint-desktop) {
                         /*desktop*/
                           border: .3vw solid #fff;
@@ -193,7 +197,7 @@ textarea {
               }
               @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 3vw;
+                  font-size: 2.5vw;
               }
         }
 
@@ -207,8 +211,8 @@ textarea {
               }
               @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  padding: $wrapper-padding-desktop;
-                  font-size: 1.3em;
+                  padding: 6vw 40px;
+                  font-size: 1.1em;
               }
         }
 
@@ -235,7 +239,7 @@ textarea {
               }
               @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 3vw;
+                  font-size: 2.5vw;
               }
 
         }
@@ -250,8 +254,8 @@ textarea {
               }
               @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  padding: $wrapper-padding-desktop;
-                  font-size: 1.3em;
+                  padding: 6vw 40px;
+                  font-size: 1.1em;
               }
         }
 
@@ -280,7 +284,7 @@ textarea {
             }
             @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 3vw;
+                  font-size: 2.5vw;
             }
         }
 
@@ -293,8 +297,8 @@ textarea {
               }
               @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  padding: $wrapper-padding-desktop;
-                  font-size: 1.3em;
+                  padding: 6vw 40px;
+                  font-size: 1.1em;
               }
         }
 
@@ -316,7 +320,7 @@ textarea {
     text-align: center;
     background: #290606;
       &__heading{
-            padding: 20px;
+            padding: 35px 0px 20px;
             text-align: center;
             font-size: 7vw;
               @media only screen and (min-width: $breakpoint-tablet) {
@@ -340,10 +344,52 @@ textarea {
                 /*desktop*/
                     max-width: 25vw;
                     display: inline-block;
-                    margin: 2vw;
+                    margin: 3vw;
               } 
         img{
           width: 100%;
+        }
+      }
+      &__flex-container{
+        display: flex;
+      }
+      &__large-image-box{
+        width: 60vw;
+        padding: 20px;
+      
+        img{
+            max-height: 82vh;
+            padding: 0px 2vmin;
+            @media only screen and (min-height: 620px){
+              max-height: 65vh;
+              padding: 0px 1vw;
+            }
+            @media only screen and (min-height: 790px){
+              max-height: 55vh;
+              padding: 0px 1vw;
+            }
+            @media only screen and (min-height: 965px){
+              max-height: 50vh;
+              padding: 0px 1vw;
+              }
+            @media only screen and (min-width: 1125px){
+              padding: 0px 2vw;
+            }
+            @media only screen and (min-width: 1200px){
+              padding: 0px 2.8vw;
+            }
+        }
+      }
+      &__large-text-box{
+        width: 40vw;
+        padding: 45px 30px 0px 0px;
+        h4{
+          text-align: center;
+          padding-bottom: 5px;
+        }
+        p{
+          padding-bottom: 40px;
+          font-size: 1.1em;
         }
       }
   
