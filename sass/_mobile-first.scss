@@ -100,6 +100,9 @@ hr{
     margin: 1.5em;
 }
 
+.flex-container{
+    display: flex;
+}
 /*=======Welcome-Section(Mobile)=======*/
 .welcome{
     background-image: $background-welcome-mobile;
@@ -109,7 +112,7 @@ hr{
     background-size: cover;
     text-align: center;
         @media only screen and (min-width: $breakpoint-desktop) {
-          /*desktop*/
+        /*desktop*/
             background-image: $background-welcome-desktop;
         }
 
@@ -122,7 +125,7 @@ hr{
             line-height: 1;
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 6.8vw;
+                    font-size: 6.8vw;
                 }
         }
 
@@ -130,7 +133,7 @@ hr{
             font-size: 9vw;
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 6vw;
+                    font-size: 6vw;
                 }
         }
 
@@ -142,43 +145,43 @@ hr{
             margin: 5px 2px;
             width: 35vw;
             font-size: 4vw;
-              @media only screen and (min-width: $breakpoint-tablet) {
+                @media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
-                  border: 3px solid #fff;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
+                    border: 3px solid #fff;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  border: .3vw solid #fff;
-                  border-radius: .5vw;
-                  padding: 4px 10px;
-                  margin: 5px 2px;
-                  font-size: 1.6vw;
-                  font-weight: bold;
-                  width: unset;
-                  transition: all 0.2s ease-out;
-                  &:hover{
-                      background-color: rgba(176, 144, 144, 0.4);
-                      box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
-                      transition: all 0.1s ease-in;
-                  }
-              }
+                    border: .3vw solid #fff;
+                    border-radius: .5vw;
+                    padding: 4px 10px;
+                    margin: 5px 2px;
+                    font-size: 1.6vw;
+                    font-weight: bold;
+                    width: unset;
+                    transition: all 0.2s ease-out;
+                        &:hover{
+                            background-color: rgba(176, 144, 144, 0.4);
+                            box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                            transition: all 0.1s ease-in;
+                        }
+                }
         }
 
         &__social-icons a{
             font-size: 8vw;
             margin: 0px 3px;
-              @media only screen and (min-width: $breakpoint-desktop) {
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 4vw;
-                  margin: 0px 1vw;
-                  transition: all 0.2s ease-out;
-                  &:hover{
-                      text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
-                      transition: all 0.1s ease-in;
-                  }
-              }  
+                    font-size: 4vw;
+                    margin: 0px 1vw;
+                    transition: all 0.2s ease-out;
+                        &:hover{
+                            text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                            transition: all 0.1s ease-in;
+                        }
+                    }  
         }          
-}
+}//end-welcome-classes
 
 
 
@@ -197,45 +200,46 @@ hr{
     text-align: center;
     flex: 1 1 0;
 
-        &__heading{
-            font-size: 7vw;
-            padding-bottom: 5px;
-              @media only screen and (min-width: $breakpoint-tablet) {
-                /*Tablet*/
-                  font-size: 5vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                  font-size: 2.5vw;
-              }
-        }
-
         &__wrapper{
             padding: $wrapper-padding-mobile;
             margin: 0px auto;
-              @media only screen and (min-width: $breakpoint-tablet) {
+                @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
-                  max-width: 66vw;
-                  font-size: 2.3vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+                    }
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  padding: 6vw 40px;
-                  font-size: 1.1em;
-                  p{
-                    text-align: justify;
-                  }
-              }
+                    padding: 6vw 40px;
+                    font-size: 1.1em;
+                        p{
+                            text-align: justify;
+                        }
+                    }
+        }
+
+        &__heading{
+            font-size: 7vw;
+            padding-bottom: 5px;
+                @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                    font-size: 5vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    font-size: 2.5vw;
+                }
         }
 
         &__image-box{
             margin: 0 auto;
             max-width: 75vh;
-            img{
-                width: 100%;
-            }
+                img{
+                    width: 100%;
+                }
         }               
-}
+}//end-responsive-classes
+
 
 /*----Development----*/
 .development{
@@ -243,47 +247,48 @@ hr{
     text-align: center;
     flex: 1 1 0;
 
-        &__heading{
-            font-size: 7vw;
-            padding-bottom: 5px;
-              @media only screen and (min-width: $breakpoint-tablet) {
-                /*Tablet*/
-                  font-size: 5vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                  font-size: 2.5vw;
-              }
-
-        }
-
         &__wrapper{
             margin: 0px auto;
             padding: $wrapper-padding-mobile;
-              @media only screen and (min-width: $breakpoint-tablet) {
+                @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
-                  max-width: 66vw;
-                  font-size: 2.3vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
+                    max-width: 66vw;
+                    font-size: 2.3vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  padding: 6vw 40px;
-                  font-size: 1.1em;
-                  p{
-                    text-align: justify;
-                  }
-              }
+                    padding: 6vw 40px;
+                    font-size: 1.1em;
+                        p{
+                            text-align: justify;
+                        }
+                }
+        }
+
+        &__heading{
+            font-size: 7vw;
+            padding-bottom: 5px;
+                @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                    font-size: 5vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    font-size: 2.5vw;
+                }
+
         }
 
         &__image-box{
             margin: 0 auto;
             max-width: 75vh;
             padding-bottom: 20px;
-            img{
-                width: 75%;
-            }
+                img{
+                    width: 74%;
+                }
         }                       
-}
+}//end-develop-classes
+
 
 /*----Code----*/
 .code{
@@ -292,154 +297,165 @@ hr{
     flex: 1 1 0;
 
 
-        &__heading{
-          font-size: 7vw;
-          padding-bottom: 5px;
-            @media only screen and (min-width: $breakpoint-tablet) {
-                /*Tablet*/
-                  font-size: 5vw;
-            }
-            @media only screen and (min-width: $breakpoint-desktop) {
-                /*desktop*/
-                  font-size: 2.5vw;
-            }
-        }
-
         &__wrapper{
             margin: 0px auto;
             padding: $wrapper-padding-mobile;
-              @media only screen and (min-width: $breakpoint-tablet) {
+                @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
-                  max-width: 66vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
+                    max-width: 66vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  padding: 6vw 40px;
-                  font-size: 1.1em;
-                  p{
-                    text-align: justify;
-                  }
-              }
+                    padding: 6vw 40px;
+                    font-size: 1.1em;
+                        p{
+                            text-align: justify;
+                        }
+                }
+        }
+
+        &__heading{
+          font-size: 7vw;
+          padding-bottom: 5px;
+                @media only screen and (min-width: $breakpoint-tablet) {
+                /*Tablet*/
+                    font-size: 5vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    font-size: 2.5vw;
+                }
         }
 
         &__image-box{
             margin: 0 auto;
             max-width: 75vh;
-            img{
-                width: 108%;
+                img{
+                    width: 100%;
+                        @media only screen and (min-width: $breakpoint-desktop) {
+                        /*desktop*/
+                            width: 108%;
+                        }
+                }
+        }
+
+        &__github-link{
+            font-weight: bold;
+                &:visited{
+                    color: #fff;
+                }
+                &:hover{
+                    color: #0fdbef;
             }
         }                 
-}
+}//end-code-classes
 
 
 
 /*=======Work-Section=======*/
 
-
 .work{
     text-align: center;
     background: #290606;
     padding-bottom: 40px;
+
         &__heading{
             padding: 35px 0px 20px;
             text-align: center;
             font-size: 7vw;
-              @media only screen and (min-width: $breakpoint-tablet) {
+                @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
-                  font-size: 5vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
+                    font-size: 5vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 3vw;
-              }
-      }
-    &__image-box{
-        font-size: .8em;
-        padding: 5px;
-        border-radius: 5px;
-        background: #292929;
-        text-align: center;
-        margin: 0 auto;
-        width: 43vh;
-          @media only screen and (min-width: $breakpoint-desktop) {
-              /*desktop*/
-                max-width: 25vw;
-                display: inline-block;
-                margin: 3vw;
-              }
-        p{
-            padding: 5px 0px 2px;
-        }       
-        img{
-            width: 100%;
+                    font-size: 3vw;
+                }
         }
-    }
 
-    &__flex-container{
-        display: flex;
-    }
+        &__image-box{
+            font-size: .8em;
+            padding: 5px;
+            border-radius: 5px;
+            background: #292929;
+            text-align: center;
+            margin: 0 auto;
+            width: 43vh;
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    max-width: 25vw;
+                    display: inline-block;
+                    margin: 3vw;
+                }
+            p{
+                padding: 5px 0px 2px;
+            }       
+            img{
+                width: 100%;
+            }
+        }
 
-    &__large-image-box{
-        width: 60vw;
-        padding: 20px;
-        img{
-            max-height: 82vh;
-            padding: 0px 2vmin;
-            @media only screen and (min-height: 620px){
-              max-height: 65vh;
-              padding: 0px 1vw;
-            }
-            @media only screen and (min-height: 790px){
-              max-height: 55vh;
-              padding: 0px 1vw;
-            }
-            @media only screen and (min-height: 965px){
-              max-height: 50vh;
-              padding: 0px 1vw;
-              }
-            @media only screen and (min-width: 1125px){
-              padding: 0px 2vw;
-            }
-            @media only screen and (min-width: 1200px){
-              padding: 0px 2.8vw;
+        &__large-image-box{
+            width: 60vw;
+            padding: 20px;
+            img{
+                max-height: 82vh;
+                padding: 0px 2vmin;
+                    @media only screen and (min-height: 620px){
+                        max-height: 65vh;
+                        padding: 0px 1vw;
+                    }
+                    @media only screen and (min-height: 790px){
+                        max-height: 55vh;
+                        padding: 0px 1vw;
+                    }
+                    @media only screen and (min-height: 965px){
+                        max-height: 50vh;
+                        padding: 0px 1vw;
+                    }
+                    @media only screen and (min-width: 1125px){
+                        padding: 0px 2vw;
+                    }
+                    @media only screen and (min-width: 1200px){
+                        padding: 0px 2.8vw;
+                    }
             }
         }
-    }
-    &__large-text-box{
-        width: 40vw;
-        padding: 45px 30px 0px 0px;
-        text-align: justify;
-        h4{
-          text-align: center;
-          padding-bottom: 5px;
+
+        &__large-text-box{
+            width: 40vw;
+            padding: 45px 4vw 0px 0px;
+            text-align: justify;
+            h4{
+              text-align: center;
+              padding-bottom: 5px;
+            }
+            p{
+              padding-bottom: 40px;
+              font-size: 1.1em;
+            }
         }
-        p{
-          padding-bottom: 40px;
-          font-size: 1.1em;
-        }
-      }
-  
-}
+}//end-work-classes
 
 
  /*=======About-Section(Mobile)=======*/
 .about{
-    background-image: url("../img/skyfield.jpg");
+    background-image: $background-about-mobile;
     background-size: cover;
     background-position: bottom left;
     font-size: 1.1em;
         @media only screen and (min-width: $breakpoint-desktop) {
-          /*desktop*/
+        /*desktop*/
             background-image: $background-about-desktop;
         }
         
         &__wrapper{
             padding: 12vw 20px;
-              @media only screen and (min-width: $breakpoint-desktop) {
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
                     padding: 6vw 0px 6vw 75px;
                     display: flex;
-              }
+                }
         } 
 
         &__heading{
@@ -447,27 +463,27 @@ hr{
             padding-bottom: 20px;
             color: #dcc66d;
             font-size: 7vw;
-              @media only screen and (min-width: $breakpoint-tablet) {
+                @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
-                  font-size: 5vw;
-              }
-              @media only screen and (min-width: $breakpoint-desktop) {
+                    font-size: 5vw;
+                }
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                  font-size: 3vw;
-              }
+                    font-size: 3vw;
+                }
         }
 
-        &__text-box-left{
+        &__biography--left{
             text-align: justify;
             max-width: 500px;
             margin: 0 auto;
-            @media only screen and (min-width: $breakpoint-desktop) {
+                @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
                     width: 50vw;
-              }
+                }
         }
 
-        &__text-box-right{
+        &__skills--right{
             width: 50vw;
             text-align: center;
             h2{
@@ -513,7 +529,7 @@ hr{
             cursor: pointer;
             font-size: 1.2em;
         }
-}
+}//end-about-classes
 
         
 @media only screen and (min-width: $breakpoint-desktop) {

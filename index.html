@@ -34,16 +34,19 @@ start-welcome-section
 -->
 <section id="welcome" class="welcome">
     <div class="welcome__wrapper">
+
         <h1>
             <span class="welcome__heading">Hello I'm Blake Sims</span><br>
             <span class="welcome__sub-heading">Front-End Developer</span><br>
         </h1>
+
         <nav>
             <a href="#responsive" class="welcome__ghost-button">What I Do</a>
             <a href="#work" class="welcome__ghost-button">My Work</a>
             <a href="#about" class="welcome__ghost-button">Who is Blake</a>
             <a href="mailto:blake@edelta.net" class="welcome__ghost-button">Blake@edelta.net</a>
         </nav>
+
         <span class="welcome__social-icons">
             <a target="_blank" href="https://github.com/Blake03">
                 <i class="fa fa-github-square" aria-hidden="true"></i></a>
@@ -52,6 +55,7 @@ start-welcome-section
             <a target="_blank" href="https://www.linkedin.com/in/blake-sims-868a2279">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         </span><!--social-icons-->
+
     </div><!--wrapper-->
 </section><!--welcome-->
 <!--
@@ -72,13 +76,16 @@ start-What-I-Do-section
 
     <section id="responsive" class="responsive">
         <div class="responsive__wrapper">
+
             <div class="responsive__image-box">
                <img src="img/responsivescreens6.png" alt="responsive web design">
             </div><!--img-box-->
+
             <div class="responsive__text-box">
-            <h2 class="responsive__heading"><a href="#responsive">Responsive Design</a></h2>
+                <h2 class="responsive__heading"><a href="#responsive">Responsive Design</a></h2>
                 <p>I use HTML5, CSS3, Sass, and jQuery to build fully responsive websites, templates, & Wordpress themes that look great on all screen sizes, devices, & browsers.</p>
             </div><!--text-box-->
+
         </div><!--wrapper-->
     </section><!--responsive-->
 
@@ -86,13 +93,16 @@ start-What-I-Do-section
 
     <section id="development" class="development">
         <div class="development__wrapper">
+
             <div class="development__image-box">
                 <img src="img/wordpress-logo.png" alt="web development">
             </div><!--img-box-->
+
             <div class="development__text-box">
-            <h2 class="development__heading"><a href="#development">Development</a></h2>
+                <h2 class="development__heading"><a href="#development">Development</a></h2>
                 <p>I develop customized WordPress sites that are fast, secure, and easy to manage. My clients range from small businesses, musicians, and artists, all the way to multinational corporations and politicians.</p>
             </div><!--text-box-->
+
         </div><!--wrapper-->
     </section><!--development-->
 
@@ -100,15 +110,19 @@ start-What-I-Do-section
 
     <section id="code" class="code">
         <div class="code__wrapper">
+
             <div class="code__image-box">
                 <img src="img/development1.png" alt="code">
             </div><!--img-box-->
+
             <div class="code__text-box">
-            <h2 class="code__heading"><a href="#code">Code</a></h2>
-                <p>I use the power of Sass to output Dry, Modular, and extreamly well orginazed CSS. My mark up is clean, semantic, and well commented. Check out my <a target="blank" href="https://github.com/Blake03"> Github profile.</a></p>
+                <h2 class="code__heading"><a href="#code">Code</a></h2>
+                <p>I use the power of Sass to output Dry, Modular, and extreamly well orginazed CSS. My mark up is clean, semantic, and well commented. Check me out on <a class="code__github-link" target="blank" href="https://github.com/Blake03">Github.</a></p>
             </div><!--text-box-->
+
         </div><!--wrapper-->
     </section><!--development-->
+
 </section><!--What-I-Do-->
 
 <!--
@@ -122,58 +136,64 @@ start-work-section
 -->
 
 <section id="work" class="work">
-    <h2 class="work__heading">My Work</h2>
 
-        <div class="desktop-only clearfix">
-        <div class="work__flex-container">
+    <h2 class="work__heading"><a href="#work"> My Work</a></h2>
 
-            <div class="work__large-image-box work__flex-container">
+        <div class="desktop-only">
+        <div class="flex-container">
+
+            <aside class="work__large-image-box flex-container">
                 <a target="_blank" href="https://blake03.github.io/Leila-Art-Gallery/">
                     <img src="img/screenshot-liela-phone.jpg" alt="Mobile"></a>
                 <a target="_blank" href="https://blake03.github.io/Leila-Art-Gallery/">
                     <img src="img/screenshot-liela-tablet.jpg" alt="Tablet"></a>
                 <a target="_blank" href="https://blake03.github.io/Leila-Art-Gallery/">
                     <img src="img/screenshot-liela-desktop.jpg" alt="Desktop"></a>
-            </div><!--large-image-box-->
+            </aside><!--large-image-box-->
 
-            <div class="work__large-text-box">
+            <article class="work__large-text-box">
                 <h4>LeilaAlexandra.com</h4>
                 <p>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery, and PhotoShop. It features a Lightbox gallery, smooth scroll navigation, show/hide button, and an animated back top button. It uses the power of HTML5-Boilerplate, Normalize.css, and Modernizr to ensure that it looks beautiful on any possible combination of browsers and devices.</p>
                 <h4>Testimonial</h4>
                 <p>I am very pleased with the work done by Blake. He was professional, quick to respond, and helped me understand website development - something I had no previous experience with.</p>
-            </div><!--large-text-box-->
-            </div>
+            </article><!--large-text-box-->
+
+        </div><!--flex-container-->
         </div><!--desktop-only-->
 
-        <div class="work__image-box mobile-only">
+        <figure class="work__image-box mobile-only">
             <a target="_blank" href="https://blake03.github.io/Leila-Art-Gallery/">
                 <img src="img/mobile-screenshot-leila.jpg" alt="LeilaAlexandra.com Mobile Screenshot"></a>
-            <p>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery and PhotoShop.</p>
-        </div><!--work__image-box-->
+
+            <figcaption>LeilaAlexandra.com is a fully responsive single-page art gallery that I built from scratch using HTML5/CSS3, jQuery and PhotoShop.</figcaption>
+        </figure><!--work__image-box-->
 
     <hr>
         
-        <div class="work__image-box">
+        <figure class="work__image-box">
             <a target="_blank" href="http://msidrywall.com">
                 <img src="img/mobile-screenshot-msi.jpg" alt="msidrywall.com Mobile Screenshot"></a>
-            <p>MSIdrywall.com, MSI is a multinational construction company. This website is powered by WordPress and features a login area for members and a Flash header that I built before Flash became obsolete.</p>
-        </div><!--img-box-->
+
+            <figcaption>MSIdrywall.com, MSI is a multinational construction company. This website is powered by WordPress and features a login area for members and a Flash header that I built before Flash became obsolete.</figcaption>
+        </figure><!--img-box-->
 
     <hr class="mobile-only">
 
-        <div class="work__image-box">
+        <figure class="work__image-box">
             <a target="_blank" href="http://mcgeheechamber.com">
                 <img src="img/mobile-screenshot-mcgeheechamber.jpg" alt="McGeheeChamber.com Mobile Screenshot"></a>
-            <p>McgeheeChamber.com is a WordPress blog that I built for the chamber of commerce in my little hometown. I also taught the owner how to update content and post current info and articles.</p>
-        </div><!--img-box-->
+
+            <figcaption>McgeheeChamber.com is a WordPress blog that I built for the chamber of commerce in my little hometown. I also taught the owner how to update content and post current info and articles.</figcaption>
+        </figure><!--img-box-->
 
     <hr class="mobile-only">
         
-        <div class="work__image-box">
+        <figure class="work__image-box">
             <a target="_blank" href="http://arkansascityusa.com">
                 <img src="img/mobile-screenshot-arkansascity.jpg" alt="ArkansasCity.com Mobile Screenshot"></a>
-            <p>ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a javascript powered image carousel header.</p>
-        </div><!--img-box-->
+
+            <figcaption>ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a javascript powered image carousel header.</figcaption>
+        </figure><!--img-box-->
 
 </section><!--work-->
 
@@ -190,9 +210,10 @@ start-about-section
 
 <section id="about" class="about">
     <div class="about__wrapper">
-        <div class="about__text-box-left">
+
+        <article class="about__biography--left">
             <h2 class="about__heading"><a href="#about">Who is Blake</a></h2>
-            <p>I am a self-taught web/graphic designer with a passion for learning. Back in 2005, I started designing websites and updating content with <strong>WordPress, Dreamweaver, and Photoshop</strong> for a small web hosting company. Due to a lack of clients, I began working construction jobs in addition to my work online. Soon I found myself with less and less time to spend growing my skills as a developer. Eventually, I came to the realization that I was heading down the wrong path.</p>
+            <p>I am a self-taught web designer/frontend developer with a passion for learning. Back in 2005, I started designing websites and updating content with <strong>WordPress, Dreamweaver, and Photoshop</strong> for a small web hosting company. Due to a lack of clients, I began working construction jobs in addition to my work online. Soon I found myself with less and less time to spend growing my skills as a developer. Eventually, I came to the realization that I was heading down the wrong path.</p>
             <br>
             <p>About a year ago I decided it was time to get back to doing what I love. I devoted every second of my spare time to learning everything I could about the latest technologies being used in modern web design. I then narrowed my focus to learning as much as possible about <strong>Responsive Design, HTML5/CSS3, jQuery, PhotoShop CC, and GitHub.</strong></p>
             <br>
@@ -202,9 +223,9 @@ start-about-section
             <br>
             <p>If you have any questions or would like to work together, you can reach me at <a href="mailto:blake@edelta.net"><strong>Blake@edelta.net</strong></a></p> 
                 <a href="blake-sims-webdev-resume.pdf" class="about__button mobile-only">Resume.pdf</a>
-        </div><!--text-box-left-->
+        </article><!--biography-left-->
 
-        <div class="about__text-box-right desktop-only">
+        <aside class="about__skills--right desktop-only">
             <h2 class="about__sub-heading">Skills</h2>
             <ul>
                 <li>HTML5</li>
@@ -235,7 +256,8 @@ start-about-section
                 
             </ul>
             <a class="button" href="blake-sims-webdev-resume.pdf">Download Resume.pdf</a>
-        </div><!--text-box-right-->
+        </aside><!--skills-right-->
+
     </div><!--wrapper-->
 </section><!--about-->
 
