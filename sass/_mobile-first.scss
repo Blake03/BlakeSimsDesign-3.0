@@ -537,3 +537,8 @@ hr{
     display: none;
   }
 }
+@media only screen and (min-width: $breakpoint-desktop){
+    .desktop-only{
+        display: initial;
+    }
+}
