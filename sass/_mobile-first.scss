@@ -108,9 +108,10 @@ hr{
 /*=======Navbar-Styles=======*/
 .navbar{
     width: 100%;
-    background: #000;
+    background:rgba(0,0,0,0.93);
     position: fixed;
     display: none;
+    font-weight: bold;
     
         ul{
             display: flex;
@@ -128,8 +129,13 @@ hr{
             padding: 10px;
         }
 
+        &__navbar-items{
+            margin: 12px 0px 0px;
+            text-align: center;
+        }
+
         &__navbar-items li{
-            margin: 12px 0px;
+            margin: 20px 0px;
         }
         
         &__navbar-toggle{
@@ -137,9 +143,13 @@ hr{
             top: 10px;
             right: 10px;
         }
+
+
 }//end-navbar-styles
 
-
+.desktop-navbar li{
+    margin: 15px;
+}
 /*=======Welcome-Section-Styles)=======*/
 .welcome{
     background-image: $background-welcome-mobile;
@@ -256,7 +266,7 @@ hr{
         }
 
         &__heading{
-            font-size: 7vw;
+            font-size: $mobile-headings-size;
             padding-bottom: 5px;
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
@@ -303,7 +313,7 @@ hr{
         }
 
         &__heading{
-            font-size: 7vw;
+            font-size: $mobile-headings-size;
             padding-bottom: 5px;
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
@@ -352,7 +362,7 @@ hr{
         }
 
         &__heading{
-          font-size: 7vw;
+          font-size: $mobile-headings-size;
           padding-bottom: 5px;
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
@@ -396,10 +406,18 @@ hr{
     background: #290606;
     padding-bottom: 40px;
 
+        &__wrapper{
+            padding: 1vh;
+                @media only screen and (min-width: $breakpoint-desktop) {
+                /*desktop*/
+                    padding-top: 2vw;
+                }
+        } 
+
         &__heading{
-            padding: 35px 0px 20px;
+            padding: 50px 0px 20px;
             text-align: center;
-            font-size: 7vw;
+            font-size: $mobile-headings-size;
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
                     font-size: 5vw;
@@ -487,19 +505,18 @@ hr{
         }
         
         &__wrapper{
-            padding: 12vw 20px;
+            padding: 8vh 20px;
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                    padding: 6vw 0px 6vw 75px;
+                    padding: 9vw 0px 6vw 75px;
                     display: flex;
                 }
         } 
 
         &__heading{
             text-align: center;
-            padding-bottom: 20px;
             color: #dcc66d;
-            font-size: 7vw;
+            font-size: $mobile-headings-size;
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
                     font-size: 5vw;

@@ -527,9 +527,10 @@ hr {
 /*=======Navbar-Styles=======*/
 .navbar {
   width: 100%;
-  background: #000;
+  background: rgba(0, 0, 0, 0.93);
   position: fixed;
   display: none;
+  font-weight: bold;
 }
 
 .navbar ul {
@@ -545,14 +546,23 @@ hr {
   padding: 10px;
 }
 
+.navbar__navbar-items {
+  margin: 12px 0px 0px;
+  text-align: center;
+}
+
 .navbar__navbar-items li {
-  margin: 12px 0px;
+  margin: 20px 0px;
 }
 
 .navbar__navbar-toggle {
   position: relative;
   top: 10px;
   right: 10px;
+}
+
+.desktop-navbar li {
+  margin: 15px;
 }
 
 /*=======Welcome-Section-Styles)=======*/
@@ -693,7 +703,7 @@ hr {
 }
 
 .responsive__heading {
-  font-size: 7vw;
+  font-size: 9vw;
   padding-bottom: 5px;
 }
 
@@ -752,7 +762,7 @@ hr {
 }
 
 .development__heading {
-  font-size: 7vw;
+  font-size: 9vw;
   padding-bottom: 5px;
 }
 
@@ -811,7 +821,7 @@ hr {
 }
 
 .code__heading {
-  font-size: 7vw;
+  font-size: 9vw;
   padding-bottom: 5px;
 }
 
@@ -864,10 +874,21 @@ hr {
   padding-bottom: 40px;
 }
 
+.work__wrapper {
+  padding: 1vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .work__wrapper {
+    /*desktop*/
+    padding-top: 2vw;
+  }
+}
+
 .work__heading {
-  padding: 35px 0px 20px;
+  padding: 50px 0px 20px;
   text-align: center;
-  font-size: 7vw;
+  font-size: 9vw;
 }
 
 @media only screen and (min-width: 600px) {
@@ -986,22 +1007,21 @@ hr {
 }
 
 .about__wrapper {
-  padding: 12vw 20px;
+  padding: 8vh 20px;
 }
 
 @media only screen and (min-width: 900px) {
   .about__wrapper {
     /*desktop*/
-    padding: 6vw 0px 6vw 75px;
+    padding: 9vw 0px 6vw 75px;
     display: flex;
   }
 }
 
 .about__heading {
   text-align: center;
-  padding-bottom: 20px;
   color: #dcc66d;
-  font-size: 7vw;
+  font-size: 9vw;
 }
 
 @media only screen and (min-width: 600px) {

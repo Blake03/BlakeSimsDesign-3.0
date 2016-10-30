@@ -21,9 +21,11 @@
 ====================================================
 start-navbar
 -->
+
+<div class="mobile-only">
 <nav class="navbar">
     <ul>
-    
+
         <div class="navbar__navbar-menu"> 
 
             <li><a class="navbar__logo" href="#welcome">BlakeSimsDesign.com</a></li>
@@ -40,6 +42,20 @@ start-navbar
 
     </ul>
 </nav><!--navbar-->
+</div><!--mobile-only-->
+
+<div class="desktop-only">
+    <nav class="navbar desktop-navbar">
+        <ul>
+            <li><a href="#welcome">BlakeSimsDesign.com</a></li>
+            <li><a href="#what-i-do">What I Do</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#about">Who is Blake</a></li>
+        </ul>
+    </nav><!--navbar-->
+</div><!--desktop-only-->
+
+
 
 <!--
 end-navbar
@@ -155,6 +171,7 @@ start-work-section
 -->
 
 <section id="work" class="work">
+    <div class="work__wrapper">
 
     <h2 class="work__heading"><a href="#work"> My Work</a></h2>
 
@@ -210,6 +227,7 @@ start-work-section
             <figcaption>ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a javascript powered image carousel header.</figcaption>
         </figure><!--img-box-->
 
+    </div><!--wrapper-->
 </section><!--work-->
 
 <!--
