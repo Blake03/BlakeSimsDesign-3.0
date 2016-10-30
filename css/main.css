@@ -524,7 +524,38 @@ hr {
   display: flex;
 }
 
-/*=======Welcome-Section(Mobile)=======*/
+/*=======Navbar-Styles=======*/
+.navbar {
+  width: 100%;
+  background: #000;
+  position: fixed;
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__navbar-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.navbar__navbar-items li {
+  margin: 12px 0px;
+}
+
+.navbar__navbar-toggle {
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+/*=======Welcome-Section-Styles)=======*/
 .welcome {
   background-image: url("../img/mobile-bsd-bg.jpg");
   height: 100vh;
@@ -622,7 +653,7 @@ hr {
   }
 }
 
-/*=======What_I_Do-Section(Mobile)=======*/
+/*=======What_I_Do-Section-Styles=======*/
 @media only screen and (min-width: 900px) {
   .what-i-do {
     /*desktop*/
@@ -630,7 +661,7 @@ hr {
   }
 }
 
-/*----Responsive----*/
+/*----Responsive-Styles----*/
 .responsive {
   background: #333352;
   text-align: center;
@@ -689,7 +720,7 @@ hr {
   width: 100%;
 }
 
-/*----Development----*/
+/*----Development-Styles----*/
 .development {
   background-color: #686d64;
   text-align: center;
@@ -749,7 +780,7 @@ hr {
   width: 74%;
 }
 
-/*----Code----*/
+/*----Code-Styles----*/
 .code {
   background-color: #9a4313;
   text-align: center;
@@ -826,7 +857,7 @@ hr {
   color: #0fdbef;
 }
 
-/*=======Work-Section=======*/
+/*=======Work-Section-Styles=======*/
 .work {
   text-align: center;
   background: #290606;
@@ -939,7 +970,7 @@ hr {
   font-size: 1.1em;
 }
 
-/*=======About-Section(Mobile)=======*/
+/*=======About-Section-Styles=======*/
 .about {
   background-image: url("../img/skyfield.jpg");
   background-size: cover;

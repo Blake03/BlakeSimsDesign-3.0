@@ -1,6 +1,10 @@
-//nav-menue-toggle
-$(".navbar-toggle").click(function(){
-  $(".navbar-menue").toggle();
+//nav-menu-toggle
+$(".navbar__navbar-toggle, .hide-on-click").click(function(){
+  $(".navbar__navbar-items").slideToggle();
+});
+
+$(".navbar__logo").click(function(){
+  $(".navbar__navbar-items").slideUp();
 });
 
 //navbar-fade-in
