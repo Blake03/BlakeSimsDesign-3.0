@@ -115,13 +115,10 @@ hr{
     
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; 
         }
 
-        &__logo{
-        }
-
-        &__navbar-menu{
+        &__menu{
             display: flex;
             justify-content: space-around;
             flex-grow: 1;
@@ -129,27 +126,26 @@ hr{
             padding: 10px;
         }
 
-        &__navbar-items{
+        &__items{
             margin: 12px 0px 0px;
             text-align: center;
         }
 
-        &__navbar-items li{
+        &__items li{
             margin: 20px 0px;
         }
         
-        &__navbar-toggle{
+        &__toggle{
             position: relative;
             top: 10px;
             right: 10px;
         }
-
-
 }//end-navbar-styles
-
 .desktop-navbar li{
     margin: 15px;
 }
+
+
 /*=======Welcome-Section-Styles)=======*/
 .welcome{
     background-image: $background-welcome-mobile;
@@ -195,7 +191,9 @@ hr{
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
                     border: 3px solid #fff;
-                }
+                    border-radius: 7px;
+                    padding: 4px;
+                    margin: 7px 4px;                }
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
                     border: .3vw solid #fff;
@@ -233,7 +231,6 @@ hr{
 
 
  /*=======What_I_Do-Section-Styles=======*/
-
  .what-i-do{
     @media only screen and (min-width: $breakpoint-desktop) {
     /*desktop*/
@@ -424,6 +421,7 @@ hr{
                 }
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
+                    padding: 50px 0px 0px;
                     font-size: 3vw;
                 }
         }
@@ -520,6 +518,7 @@ hr{
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*Tablet*/
                     font-size: 5vw;
+                    padding-bottom: 5px;
                 }
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
@@ -541,7 +540,7 @@ hr{
             width: 50vw;
             text-align: center;
             h2{
-                padding-bottom: 20px;
+                padding-bottom: 5px;
                 font-size: 3vw;
                 color: #dcc66d;
             }
@@ -552,10 +551,11 @@ hr{
                 width: 40%;
                 display: inline-block;
             }
+            //desktop-resume-button
             .button, .button:visited{
                 display: inline-block;
                 background-color: #0f6f16;
-                padding: 12px;
+                padding: 12px 22px;
                 border-radius: 6px; 
                 box-shadow: 0 1px 3px rgba(0,0,0,0.6);
                 margin-top: 20px;
@@ -570,7 +570,7 @@ hr{
             }           
         }
 
-
+        //mobile-resume-button
         &__button{
             background: #0f6f16;
             display: inline-block;

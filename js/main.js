@@ -1,10 +1,10 @@
 //nav-menu-toggle
-$(".navbar__navbar-toggle, .hide-on-click").click(function(){
-  $(".navbar__navbar-items").slideToggle();
+$(".navbar__toggle, .hide-on-click").click(function(){
+  $(".navbar__items").slideToggle();
 });
 
 $(".navbar__logo").click(function(){
-  $(".navbar__navbar-items").slideUp();
+  $(".navbar__items").slideUp();
 });
 
 //navbar-fade-in

@@ -521,6 +521,8 @@ hr {
 }
 
 .flex-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -534,28 +536,40 @@ hr {
 }
 
 .navbar ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.navbar__navbar-menu {
+.navbar__menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-grow: 1;
-  flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
 }
 
-.navbar__navbar-items {
+.navbar__items {
   margin: 12px 0px 0px;
   text-align: center;
 }
 
-.navbar__navbar-items li {
+.navbar__items li {
   margin: 20px 0px;
 }
 
-.navbar__navbar-toggle {
+.navbar__toggle {
   position: relative;
   top: 10px;
   right: 10px;
@@ -623,6 +637,9 @@ hr {
   .welcome__ghost-button {
     /*tablet*/
     border: 3px solid #fff;
+    border-radius: 7px;
+    padding: 4px;
+    margin: 7px 4px;
   }
 }
 
@@ -667,6 +684,8 @@ hr {
 @media only screen and (min-width: 900px) {
   .what-i-do {
     /*desktop*/
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -675,7 +694,9 @@ hr {
 .responsive {
   background: #333352;
   text-align: center;
-  flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+          flex: 1 1 0;
 }
 
 .responsive__wrapper {
@@ -734,7 +755,9 @@ hr {
 .development {
   background-color: #686d64;
   text-align: center;
-  flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+          flex: 1 1 0;
 }
 
 .development__wrapper {
@@ -794,7 +817,9 @@ hr {
 .code {
   background-color: #9a4313;
   text-align: center;
-  flex: 1 1 0;
+  -webkit-flex: 1 1 0;
+      -ms-flex: 1 1 0;
+          flex: 1 1 0;
 }
 
 .code__wrapper {
@@ -901,6 +926,7 @@ hr {
 @media only screen and (min-width: 900px) {
   .work__heading {
     /*desktop*/
+    padding: 50px 0px 0px;
     font-size: 3vw;
   }
 }
@@ -1014,6 +1040,8 @@ hr {
   .about__wrapper {
     /*desktop*/
     padding: 9vw 0px 6vw 75px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -1028,6 +1056,7 @@ hr {
   .about__heading {
     /*Tablet*/
     font-size: 5vw;
+    padding-bottom: 5px;
   }
 }
 
@@ -1057,7 +1086,7 @@ hr {
 }
 
 .about__skills--right h2 {
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   font-size: 3vw;
   color: #dcc66d;
 }
@@ -1074,7 +1103,7 @@ hr {
 .about__skills--right .button, .about__skills--right .button:visited {
   display: inline-block;
   background-color: #0f6f16;
-  padding: 12px;
+  padding: 12px 22px;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   margin-top: 20px;
@@ -1181,3 +1210,5 @@ hr {
     page-break-after: avoid;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
