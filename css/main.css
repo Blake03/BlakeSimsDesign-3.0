@@ -963,8 +963,8 @@ hr {
   }
 }
 
-.work__image-box p {
-  padding: 5px 0px 2px;
+.work__image-box .caption {
+  padding: 6px 4px 2px;
 }
 
 .work__image-box img {
