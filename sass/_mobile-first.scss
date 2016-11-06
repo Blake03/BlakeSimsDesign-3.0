@@ -145,6 +145,10 @@ hr{
     margin: 15px;
 }
 
+.desktop-navbar a:hover{
+    text-shadow: .5px 0px 0px #AAFFFF;
+}
+
 
 /*=======Welcome-Section-Styles)=======*/
 .welcome{
@@ -206,8 +210,9 @@ hr{
                     transition: all 0.2s ease-out;
                         &:hover{
                             background-color: rgba(176, 144, 144, 0.4);
-                            box-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                            box-shadow: 0px 0px 15px rgba(200, 200, 400, .4);
                             transition: all 0.1s ease-in;
+                            transform: scale(1.02);
                         }
                 }
         }
@@ -221,13 +226,15 @@ hr{
                     margin: 0px 1vw;
                     transition: all 0.2s ease-out;
                         &:hover{
-                            text-shadow: 0 0px 15px rgba(200, 200, 400, .4);
+                            text-shadow: 0px 0px 15px rgba(200, 200, 400, .4);
                             transition: all 0.1s ease-in;
                         }
                     }  
         }          
+.fa:hover{
+    transform: scale(1.04);
+}
 }//end-welcome-styles
-
 
 
  /*=======What_I_Do-Section-Styles=======*/
@@ -389,7 +396,7 @@ hr{
                     color: #fff;
                 }
                 &:hover{
-                    color: #0fdbef;
+                    text-shadow: .5px 0px 0px #fff;
             }
         }                 
 }//end-code-styles
