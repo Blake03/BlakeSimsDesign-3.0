@@ -447,6 +447,9 @@ hr{
                     display: inline-block;
                     margin: 3vw;
                 }
+                &:hover{
+                    transform: scale(1.005);
+                }
             .caption{
                 padding: 6px 4px 2px;
             }       
@@ -479,6 +482,9 @@ hr{
                     @media only screen and (min-width: 1200px){
                         padding: 0px 2.8vw;
                     }
+                &:hover{
+                    transform: scale(1.005);
+                }
             }
         }
 
@@ -569,6 +575,7 @@ hr{
                 &:hover{
                       background: #0e7b17;
                       box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                      transform: scale(1.007);
                 }
                 &:active{
                     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0);
