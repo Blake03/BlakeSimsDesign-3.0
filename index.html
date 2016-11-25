@@ -17,37 +17,34 @@
         <![endif]-->
 
 
-        <!--
-        ====================================================
-        start-navbar
-        -->
+        
+    <!--
+    ====================================================
+    start-navbar
+    -->
+        <!--mobile-navbar-->
         <div class="mobile-only">
         <nav class="navbar">
 
-            <ul>
+            <div class="navbar__header">
+                <a class="navbar__logo" href="#welcome">BlakeSimsDesign.com</a>
+                <a class="navbar__toggle" href="#0">Menu</a>
+            </div><!--navbar__header-->
 
-                <div class="navbar__menu"> 
+            <ul class="navbar__menu" style="display: none;">
+                <li class="navbar__item"><a href="#what-i-do">What I Do</a></li>
+                <li class="navbar__item"><a href="#work">My Work</a></li>
+                <li class="navbar__item"><a href="#about">Who is Blake</a></li>
+            </ul><!--navbar__menu-->
 
-                    <li><a class="navbar__logo" href="#welcome">BlakeSimsDesign.com</a></li>
-
-                    <div class="navbar__items" style="display: none;">
-                        <li class="hide-on-click"><a href="#what-i-do">What I Do</a></li>
-                        <li class="hide-on-click"><a href="#work">My Work</a></li>
-                        <li class="hide-on-click"><a href="#about">Who is Blake</a></li>
-                    </div><!--navbar-items-->
-
-                </div><!--navbar-menu-->
-
-                <li><a class="navbar__toggle" href="#0">Menu</a></li>
-
-            </ul>
-        </nav><!--navbar-->
+            </nav><!--navbar-->
         </div><!--mobile-only-->
+
 
         <!--desktop-navbar-->
         <div class="desktop-only">
             <nav class="navbar desktop-navbar">
-                <ul>
+                <ul class="navbar__header">
                     <li><a href="#welcome">BlakeSimsDesign.com</a></li>
                     <li><a href="#what-i-do">What I Do</a></li>
                     <li><a href="#work">My Work</a></li>
@@ -55,16 +52,17 @@
                 </ul>
             </nav><!--navbar-->
         </div><!--desktop-only-->
-        <!--
-        end-navbar
-        ====================================================
-        -->
+    <!--
+    end-navbar
+    ====================================================
+    -->
 
 
-        <!--
-        ====================================================
-        start-welcome-section
-        -->
+
+    <!--
+    ====================================================
+    start-welcome-section
+    -->
         <section id="welcome" class="welcome">
             <div class="welcome__wrapper">
 
@@ -91,16 +89,16 @@
 
             </div><!--wrapper-->
         </section><!--welcome-->
-        <!--
-        end-welcome-section
-        ====================================================
-        -->
+    <!--
+    end-welcome-section
+    ====================================================
+    -->
 
 
-        <!--
-        ====================================================
-        start-What-I-Do-section
-        -->
+    <!--
+    ====================================================
+    start-What-I-Do-section
+    -->
         <section id="what-i-do" class="what-i-do">
 
         <!--Responsive-->
@@ -113,7 +111,7 @@
 
                     <div class="responsive__text-box">
                         <h2 class="responsive__heading"><a href="#responsive">Responsive Design</a></h2>
-                        <p>I use HTML5, CSS3, Sass, and jQuery to build fully responsive websites, templates, & Wordpress themes that look great on all screen sizes, devices, & browsers.</p>
+                        <p>I use HTML5, CSS3, Sass, and jQuery to build fully responsive websites, templates, & WordPress themes that look great on all screen sizes, devices, & browsers.</p>
                     </div><!--text-box-->
 
                 </div><!--wrapper-->
@@ -152,16 +150,16 @@
             </section><!--development-->
 
         </section><!--What-I-Do-->
-        <!--
-        end-What-I-Do-section
-        ====================================================
-        -->
+    <!--
+    end-What-I-Do-section
+    ====================================================
+    -->
 
 
-        <!--
-        ====================================================
-        start-work-section
-        -->
+    <!--
+    ====================================================
+    start-work-section
+    -->
         <section id="work" class="work">
             <div class="work__wrapper">
 
@@ -221,22 +219,22 @@
                 <figure class="work__image-box">
                     <a target="_blank" href="http://arkansascityusa.com">
                         <img src="img/mobile-screenshot-arkansascity.jpg" alt="ArkansasCity.com Mobile Screenshot"></a>
-                    <figcaption class="caption">ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a javascript powered image carousel header.</figcaption>
+                    <figcaption class="caption">ArkansasCityUSA.com Is a WordPress site that I built for our state representative in order to promote tourism to the historic town of Arkansas City. It features a JavaScript powered image carousel header.</figcaption>
                 </figure><!--img-box-->
 
             </div><!--wrapper-->
         </section><!--work-->
 
-        <!--
-        end-work-section
-        ====================================================
-        -->
+    <!--
+    end-work-section
+    ====================================================
+    -->
 
 
-        <!--
-        ====================================================
-        start-about-section
-        -->
+    <!--
+    ====================================================
+    start-about-section
+    -->
         <section id="about" class="about">
             <div class="about__wrapper">
 
@@ -248,11 +246,12 @@
                     <br>
                     <p>About a year ago I decided it was time to get back to doing what I love. I devoted every second of my spare time to learning everything I could about the latest technologies being used in modern web design. I then narrowed my focus to learning as much as possible about <strong>Responsive Design, HTML5/CSS3, jQuery, PhotoShop CC, and GitHub.</strong></p>
                     <br>
-                    <p>Every day I wake up before around 4 or 5 a.m. and begin writing code, solving problems, and sharpening my skills. I am having a great time building upon what I have learned and growing as a web designer. Lately, I have been learning more about using <strong>Linux, Sass, Compass, Susy, Flexbox, and Underscores</strong>.</p>
+                    <p>Every day I wake up before around 4 or 5 a.m. and begin writing code, solving problems, and sharpening my skills. I am having a great time building upon what I have learned and growing as a developer. Lately, I have been learning more about using <strong>Linux, Sass, Compass, Susy, Flexbox, and Underscores</strong>.</p>
                     <br>
                     <p>When I'm not working I enjoy spending time in nature, exercising, cooking healthy & delicious    meals, listening to music & podcasts, or watching tutorial videos and documentaries.</p>
                     <br>
-                    <p>If you have any questions or would like to work together, you can reach me at <a href="mailto:blake@edelta.net"><strong>Blake@edelta.net</strong></a></p>
+                    <p>My ultimate goal is to find work transforming graphic designs into fully responsive websites and WordPress themes. If you have any questions, or would like to work together, you can reach me at <a href="mailto:blake@edelta.net"><strong>Blake@edelta.net</strong></a></p>
+
 
                     <a href="blake-sims-webdev-resume.pdf" class="about__button mobile-only">Resume.pdf</a>
                 
@@ -267,7 +266,7 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>Sass</li>
-                        <li>FlexBox</li>
+                        <li>Flexbox</li>
                         <li>jQuery</li>
                         <li>Photoshop CC</li>
                         <li>Git</li>
@@ -282,7 +281,7 @@
 
                     <h2>Interests</h2>
                     <ul>
-                        <li>Javascript</li>
+                        <li>JavaScript</li>
                         <li>Angular</li>
                         <li>React</li>
                         <li>PHP</li>
@@ -297,10 +296,10 @@
 
             </div><!--wrapper-->
         </section><!--about-->
-        <!--
-        end-about-section
-        ====================================================
-        -->
+    <!--
+    end-about-section
+    ====================================================
+    -->
 
 
 

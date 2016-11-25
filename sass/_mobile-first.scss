@@ -113,9 +113,13 @@ hr{
     display: none;
     font-weight: bold;
     
-        ul{
+        &__header{
             display: flex;
             justify-content: space-between; 
+        }
+
+        &__logo{
+            padding: 10px;
         }
 
         &__menu{
@@ -123,31 +127,25 @@ hr{
             justify-content: space-around;
             flex-grow: 1;
             flex-direction: column;
-            padding: 10px;
-        }
-
-        &__items{
-            margin: 12px 0px 0px;
             text-align: center;
+            padding-bottom: 10px;
         }
 
-        &__items li{
-            margin: 20px 0px;
+        &__item{
+            padding: 10px;
         }
         
         &__toggle{
-            position: relative;
-            top: 10px;
-            right: 10px;
+            padding: 10px;
         }
-}//end-navbar-styles
+}
 .desktop-navbar li{
     margin: 15px;
 }
 
 .desktop-navbar a:hover{
     text-shadow: .5px 0px 0px #AAFFFF;
-}
+}//end-navbar-styles
 
 
 /*=======Welcome-Section-Styles)=======*/
