@@ -9,7 +9,7 @@ $(".navbar__logo").click(function(){
 
 //navbar-fade-in
 $(window).on('scroll', function() {
-  if ($(window).scrollTop() >= 340) {
+  if ($(window).scrollTop() >= 460) {
       $('.navbar').fadeIn('slow');
    } else {
       $('.navbar').fadeOut('slow');

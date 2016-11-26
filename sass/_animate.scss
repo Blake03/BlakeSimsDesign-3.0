@@ -1,0 +1,24 @@
+/* ==========================================================================
+   Animate.css
+   ========================================================================== */
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.01, .01, .01);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
