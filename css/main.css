@@ -1135,14 +1135,14 @@ hr {
    Animate.css
    ========================================================================== */
 .animated {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale3d(0.01, 0.01, 0.01);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
     opacity: 1;

@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .animated {
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 
@@ -11,7 +11,7 @@
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale3d(.01, .01, .01);
+    transform: scale3d(.3, .3, .3);
   }
 
   50% {
