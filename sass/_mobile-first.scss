@@ -569,16 +569,20 @@ hr{
                 background-color: #0f6f16;
                 padding: 12px 22px;
                 border-radius: 6px; 
-                box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+                box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.4);
                 margin-top: 20px;
+                text-align: left;
+                width: 207px;
                 &:hover{
                       background: #0e7b17;
-                      box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
                       transform: scale(1.007);
                 }
                 &:active{
-                    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0);
-                    border: 1px solid #565252;
+                    box-shadow: 0 px px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0);
+                    transform: scale(.995);
+                    background-color: #0f6f16;
+
+
                 }
             }           
         }
