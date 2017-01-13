@@ -25,6 +25,8 @@
     -->
         <!--mobile-navbar-->
         <div class="mobile-only">
+        <div class="navbar-wrapper" style="display: none;">
+
         <nav class="navbar">
 
             <div class="navbar__header">
@@ -39,19 +41,25 @@
             </ul><!--navbar__menu-->
 
             </nav><!--navbar-->
+            </div><!--navbar-wrapper-->
         </div><!--mobile-only-->
 
 
-        <!--desktop-navbar-->
+<!--desktop-navbar-->
         <div class="desktop-only">
-            <nav class="navbar desktop-navbar">
-                <ul class="navbar__header">
-                    <li><a href="#welcome">BlakeSimsDesign.com</a></li>
-                    <li><a href="#what-i-do">What I Do</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#about">Who is Blake</a></li>
+        <div class="navbar-wrapper" style="display: none;">
+            <nav class="desktop-navbar">
+                <div class="desktop-navbar__header">
+                    <a class="desktop-navbar__logo" href="#welcome">BlakeSimsDesign.com</a>
+                    <a class="desktop-navbar__tagline" href="#welcome">Front-end Developer</a>
+                </div>
+                <ul class="desktop-navbar__menu">
+                    <li><a class="desktop-navbar__item" href="#what-i-do">What I Do</a></li>
+                    <li><a class="desktop-navbar__item" href="#work">My Work</a></li>
+                    <li><a class="desktop-navbar__item" href="#about">Who is Blake</a></li>
                 </ul>
             </nav><!--navbar-->
+            </div><!--navbar-wrapper-->
         </div><!--desktop-only-->
     <!--
     end-navbar
@@ -243,7 +251,9 @@
 
                     <h2 class="about__heading"><a href="#about">Who is Blake</a></h2>
 
-                    <p>I am a self-taught Front-end Developer with a passion for learning. Back in 2005, I started designing websites and updating content with <strong>WordPress, Dreamweaver, and Photoshop</strong> for a small web hosting company. Due to a lack of clients, I eventually began working construction jobs in addition to my work online. Soon I found myself with less and less time to spend growing my skills as a developer. Eventually, I came to the conclusion that I was heading down the wrong path.</p>
+                    <p>I am a self-taught Front-end Developer with a passion for learning. Back in 2005, I started designing websites and updating content with <strong>WordPress, Dreamweaver, and Photoshop</strong> for a small web hosting company.</p>
+                    <br>
+                    <p>Due to a lack of clients, I eventually began working construction jobs in addition to my work online. Soon I found myself with less and less time to spend growing my skills as a developer. Eventually, I came to the conclusion that I was heading down the wrong path.</p>
                     <br>
                     <p>About a year ago I decided it was time to get back to doing what I love. I devoted every second of my spare time to learning everything I could about the latest technologies and best practices being used in modern web design. I then narrowed my focus to learning as much as possible about <strong>Responsive Design, HTML5/CSS3, Sass, jQuery, PhotoShop CC, and GitHub.</strong></p>
                     <br>

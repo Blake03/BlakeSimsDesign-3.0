@@ -9,13 +9,13 @@ $(".navbar__logo").click(function(){
 
 //navbar-fade-in
 $(window).on('scroll', function() {
-  if ($(window).scrollTop() >= 460) {
-      $('.navbar').fadeIn('slow');
+  if ($(window).scrollTop() >= 480) {
+      $('.navbar-wrapper').fadeIn('1000');
    } else {
-      $('.navbar').fadeOut('slow');
+      $('.navbar-wrapper').fadeOut('1000');
   }
 });
-     
+      
 //smooth-scroll-effect   
 $("a").on("click", function(b) {
     if ("" !== this.hash) {
