@@ -750,19 +750,20 @@ hr {
 
 /*=======Welcome-Section-Styles)=======*/
 .welcome {
-  background-image: url("../img/mobile-bsd-bg.jpg");
-  height: 100vh;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background-image: url("../img/rocket-man.jpg");
   color: #eae6e6;
+  height: 100vh;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 900px) {
   .welcome {
     /*desktop*/
     background-image: url("../img/rocket-man.jpg");
+    background-position: right;
   }
 }
 

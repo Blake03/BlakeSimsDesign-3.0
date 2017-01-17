@@ -183,15 +183,16 @@ hr{
 /*=======Welcome-Section-Styles)=======*/
 .welcome{
     background-image: $background-welcome-mobile;
-    height: 100vh;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
     color: $welcome-font-color;
+    height: 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
         @media only screen and (min-width: $breakpoint-desktop) {
         /*desktop*/
             background-image: $background-welcome-desktop;
+            background-position: right;
         }
 
         &__wrapper{
