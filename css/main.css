@@ -561,10 +561,10 @@ a {
    Base styles
    ========================================================================== */
 html {
-  color: #fff;
+  color: #d8cfcf;
   font-size: 1em;
   line-height: 1.4;
-  background: #000000;
+  background: #100c0c;
 }
 
 ::-moz-selection {
@@ -756,6 +756,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  color: #686b6d;
 }
 
 @media only screen and (min-width: 900px) {
@@ -766,7 +767,7 @@ hr {
 }
 
 .welcome__wrapper {
-  padding-top: 15vh;
+  padding-top: 8vh;
   -webkit-animation-delay: .2s;
           animation-delay: .2s;
   -webkit-animation-duration: 2s;
@@ -798,7 +799,7 @@ hr {
 
 .welcome__ghost-button {
   display: inline-block;
-  border: 2px solid #fff;
+  border: 2px solid #686b6d;
   border-radius: 5px;
   padding: 2px;
   margin: 5px 2px;
@@ -809,7 +810,7 @@ hr {
 @media only screen and (min-width: 600px) {
   .welcome__ghost-button {
     /*tablet*/
-    border: 3px solid #fff;
+    border: 3px solid #686b6d;
     border-radius: 7px;
     padding: 4px;
     margin: 7px 4px;
@@ -819,7 +820,7 @@ hr {
 @media only screen and (min-width: 900px) {
   .welcome__ghost-button {
     /*desktop*/
-    border: .3vw solid #fff;
+    border: 0.3vw solid #686b6d;
     border-radius: .5vw;
     padding: 4px 10px;
     margin: 5px 2px;
@@ -829,7 +830,7 @@ hr {
     transition: all 0.2s ease-out;
   }
   .welcome__ghost-button:hover {
-    background-color: rgba(176, 144, 144, 0.4);
+    background-color: rgba(78, 78, 72, 0.4);
     box-shadow: 0px 0px 15px rgba(200, 200, 255, 0.4);
     transition: all 0.1s ease-in;
     -webkit-transform: scale(1.02);
@@ -876,11 +877,13 @@ hr {
 
 /*----Responsive-Styles----*/
 .responsive {
-  background: #333352;
+  background: #16171c;
   text-align: center;
   -webkit-flex: 1 1 0;
       -ms-flex: 1 1 0;
           flex: 1 1 0;
+  margin: 15px;
+  border-radius: 5px;
 }
 
 .responsive__wrapper {
@@ -937,11 +940,13 @@ hr {
 
 /*----Development-Styles----*/
 .development {
-  background-color: #686d64;
+  background-color: #292929;
   text-align: center;
   -webkit-flex: 1 1 0;
       -ms-flex: 1 1 0;
           flex: 1 1 0;
+  margin: 15px;
+  border-radius: 5px;
 }
 
 .development__wrapper {
@@ -999,11 +1004,13 @@ hr {
 
 /*----Code-Styles----*/
 .code {
-  background-color: #9a4313;
+  background-color: #131111;
   text-align: center;
   -webkit-flex: 1 1 0;
       -ms-flex: 1 1 0;
           flex: 1 1 0;
+  margin: 15px;
+  border-radius: 5px;
 }
 
 .code__wrapper {
@@ -1079,7 +1086,7 @@ hr {
 /*=======Work-Section-Styles=======*/
 .work {
   text-align: center;
-  background: #290606;
+  background: #1b0e0e;
   padding-bottom: 40px;
 }
 

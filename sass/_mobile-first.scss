@@ -11,10 +11,10 @@
    ========================================================================== */
 
 html {
-    color: #fff;
+    color: #d8cfcf;
     font-size: 1em;
     line-height: 1.4;
-    background: #000000
+    background: #100c0c
 }
 
 ::-moz-selection {
@@ -188,13 +188,14 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    color: $welcome-font-color;
         @media only screen and (min-width: $breakpoint-desktop) {
         /*desktop*/
             background-image: $background-welcome-desktop;
         }
 
         &__wrapper{
-            padding-top: 15vh;
+            padding-top: 8vh;
             animation-delay: .2s;
             animation-duration: 2s;
         }
@@ -218,7 +219,7 @@ hr{
 
         &__ghost-button{
             display: inline-block;
-            border: 2px solid #fff;
+            border: 2px solid $welcome-font-color;
             border-radius: 5px;
             padding: 2px;
             margin: 5px 2px;
@@ -226,13 +227,13 @@ hr{
             font-size: 4vw;
                 @media only screen and (min-width: $breakpoint-tablet) {
                 /*tablet*/
-                    border: 3px solid #fff;
+                    border: 3px solid $welcome-font-color;
                     border-radius: 7px;
                     padding: 4px;
                     margin: 7px 4px;                }
                 @media only screen and (min-width: $breakpoint-desktop) {
                 /*desktop*/
-                    border: .3vw solid #fff;
+                    border: .3vw solid $welcome-font-color;
                     border-radius: .5vw;
                     padding: 4px 10px;
                     margin: 5px 2px;
@@ -241,7 +242,7 @@ hr{
                     width: unset;
                     transition: all 0.2s ease-out;
                         &:hover{
-                            background-color: rgba(176, 144, 144, 0.4);
+                            background-color: rgba(78, 78, 72, 0.4);
                             box-shadow: 0px 0px 15px rgba(200, 200, 400, .4);
                             transition: all 0.1s ease-in;
                             transform: scale(1.02);
@@ -283,6 +284,8 @@ hr{
     background: $background-responsive;
     text-align: center;
     flex: 1 1 0;
+    margin: 15px;
+    border-radius: 5px;
 
         &__wrapper{
             padding: $wrapper-padding-mobile;
@@ -330,6 +333,8 @@ hr{
     background-color: $background-development;
     text-align: center;
     flex: 1 1 0;
+    margin: 15px;
+    border-radius: 5px;
 
         &__wrapper{
             margin: 0px auto;
@@ -379,6 +384,8 @@ hr{
     background-color: $background-code;
     text-align: center;
     flex: 1 1 0;
+    margin: 15px;
+    border-radius: 5px;
 
 
         &__wrapper{
@@ -440,7 +447,7 @@ hr{
 
 .work{
     text-align: center;
-    background: #290606;
+    background: #1b0e0e;
     padding-bottom: 40px;
 
         &__wrapper{
