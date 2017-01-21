@@ -702,7 +702,7 @@ hr {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7px 20px;
+  padding: 12px 20px;
   position: fixed;
   left: 0;
   right: 0;
@@ -720,10 +720,6 @@ hr {
 .desktop-navbar__logo {
   font-weight: bold;
   font-size: 18px;
-}
-
-.desktop-navbar__tag-line {
-  padding-left: 5px;
 }
 
 .desktop-navbar__menu {
