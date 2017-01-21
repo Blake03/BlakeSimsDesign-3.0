@@ -143,24 +143,17 @@ hr{
     background: #0c0c0c;
     display: flex;
     align-items: center;
-    padding: 7px 20px;
+    padding: 27px 20px;
     position: fixed;
     left: 0;
     right: 0;
 
-    &__header{
-        display: flex;
-        flex-direction: column;
-    }
 
     &__logo{
         font-weight: bold;
         font-size: 18px;
     }
 
-    &__tag-line{
-        padding-left: 5px;
-    }
 
     &__menu{
         display: flex;
@@ -476,7 +469,7 @@ hr{
             font-size: .8em;
             padding: 5px;
             border-radius: 5px;
-            background: #292929;
+            background: #1f1e1e;
             text-align: center;
             margin: 0 auto;
             width: 43vh;
